@@ -1,5 +1,5 @@
 
-const braco = document.querySelector("#braco")
+
 
 const controle = document.querySelectorAll(".controle-ajuste")
 
@@ -12,9 +12,10 @@ controle.forEach( (elemento) => {
 
 
 function manipulaDados(operacao){
+   const peca =document.querySelector("peca")
     if(operacao === "-"){
-        braco.value = parseInt(braco.value) - 1
+        peca.value = parseInt(peca.value) - 1
     }else{
-        braco.value = parseInt(braco.value) + 1
+        peca.value = parseInt(peca.value) + 1
     }
 }
